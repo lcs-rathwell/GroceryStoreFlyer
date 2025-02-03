@@ -11,9 +11,9 @@ struct DepertmentsListView: View {
     var body: some View {
         NavigationStack {
             
-            List {
-                Text("Butcher's best")
-                Text("Seafood")
+            List (thisWeeksFlyer.departments) { currentDepartment in
+                Text(currentDepartment.name)
+                
             }
             .navigationTitle("Weekly Flyer")
         }
