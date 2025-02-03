@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AC00F7C22D515A2A002F790F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC00F7BC2D515A2A002F790F /* Preview Assets.xcassets */; };
 		AC00F7C32D515A2A002F790F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC00F7BE2D515A2A002F790F /* Assets.xcassets */; };
-		AC00F7C42D515A2A002F790F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00F7BF2D515A2A002F790F /* ContentView.swift */; };
 		AC00F7C52D515A2A002F790F /* GroceryStoreFlyerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00F7C02D515A2A002F790F /* GroceryStoreFlyerApp.swift */; };
 		AC00F7CB2D515ADB002F790F /* DepertmentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00F7CA2D515ADB002F790F /* DepertmentsListView.swift */; };
 		AC00F7CD2D515B10002F790F /* DepartmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC00F7CC2D515B10002F790F /* DepartmentDetailView.swift */; };
@@ -20,7 +19,6 @@
 		AC00F7AB2D515977002F790F /* GroceryStoreFlyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryStoreFlyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC00F7BC2D515A2A002F790F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC00F7BE2D515A2A002F790F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC00F7BF2D515A2A002F790F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC00F7C02D515A2A002F790F /* GroceryStoreFlyerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryStoreFlyerApp.swift; sourceTree = "<group>"; };
 		AC00F7CA2D515ADB002F790F /* DepertmentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepertmentsListView.swift; sourceTree = "<group>"; };
 		AC00F7CC2D515B10002F790F /* DepartmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentDetailView.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 		AC00F7C72D515A50002F790F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AC00F7BF2D515A2A002F790F /* ContentView.swift */,
 				AC00F7CA2D515ADB002F790F /* DepertmentsListView.swift */,
 				AC00F7CC2D515B10002F790F /* DepartmentDetailView.swift */,
 			);
@@ -165,7 +162,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC00F7C42D515A2A002F790F /* ContentView.swift in Sources */,
 				AC00F7CF2D515BA8002F790F /* Flyer.swift in Sources */,
 				AC00F7CD2D515B10002F790F /* DepartmentDetailView.swift in Sources */,
 				AC00F7CB2D515ADB002F790F /* DepertmentsListView.swift in Sources */,
