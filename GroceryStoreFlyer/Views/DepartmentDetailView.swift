@@ -12,8 +12,10 @@ struct DepartmentDetailView: View {
     let depertmentToShow: Department
     
     var body: some View {
-        List(depertmentToShow.items) { currentFoodItem in
-            Text(currentFoodItem.name)
+        VStack{
+            List(depertmentToShow.items) { currentFoodItem in
+                Text("\(currentFoodItem.name), \(currentFoodItem.price)")
+            }
         }
             .listStyle(.plain)
             .navigationTitle(depertmentToShow.name)
