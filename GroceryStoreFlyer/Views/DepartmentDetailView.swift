@@ -14,7 +14,7 @@ struct DepartmentDetailView: View {
     var body: some View {
         VStack{
             List(depertmentToShow.items) { currentFoodItem in
-                Text("\(currentFoodItem.name), \(currentFoodItem.price)")
+                Text("\(currentFoodItem.name), \(currentFoodItem.price.formatted(.currency(code: "CAD")))")
             }
         }
             .listStyle(.plain)
