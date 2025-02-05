@@ -14,11 +14,24 @@ struct DepartmentDetailView: View {
     var body: some View {
         VStack{
             List(depertmentToShow.items) { currentFoodItem in
-                Text("\(currentFoodItem.name), \(currentFoodItem.price.formatted(.currency(code: "CAD")))")
+                
+                VStack {
+                    Text("\(currentFoodItem.name), \(currentFoodItem.price.formatted(.currency(code: "CAD")))\(currentFoodItem.unit)")
+                    Image(currentFoodItem.image)
+                        .resizable()
+                        .scaledToFit()
+                        .overlay(
+                            Image("red-circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                            , alignment:.topTrailing)
+
+                }
             }
+            .listStyle(.insetGrouped)
         }
-            .listStyle(.plain)
-            .navigationTitle(depertmentToShow.name)
+     
+        .navigationTitle(depertmentToShow.name)
     }
 }
 
