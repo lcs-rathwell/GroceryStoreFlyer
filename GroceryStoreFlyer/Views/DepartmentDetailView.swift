@@ -10,14 +10,20 @@ import SwiftUI
 struct DepartmentDetailView: View {
     
     let depertmentToShow: Department
+    
     var body: some View {
-        
-        Text(depertmentToShow.name)
+        List(depertmentToShow.items) { currentFoodItem in
+            Text(currentFoodItem.name)
+        }
+            .listStyle(.plain)
+            .navigationTitle(depertmentToShow.name)
     }
 }
 
 #Preview {
-    DepartmentDetailView(depertmentToShow: thisWeeksFlyer.departments[0])
+    NavigationStack {
+        DepartmentDetailView(depertmentToShow: thisWeeksFlyer.departments[0])
+    }
 }
 
 
