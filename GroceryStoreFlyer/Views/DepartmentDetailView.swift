@@ -11,20 +11,35 @@ struct DepartmentDetailView: View {
     
     let depertmentToShow: Department
     
+    
     var body: some View {
         VStack{
             List(depertmentToShow.items) { currentFoodItem in
                 
                 VStack {
-                    Text("\(currentFoodItem.name), \(currentFoodItem.price.formatted(.currency(code: "CAD")))\(currentFoodItem.unit)")
+                    Text("\(currentFoodItem.name)")
+                        .font(.title)
                     Image(currentFoodItem.image)
                         .resizable()
                         .scaledToFit()
-                        .overlay(
+                        .overlay(alignment: .topTrailing) {
+                            Text("\(currentFoodItem.price.formatted(.currency(code: "CAD")))\(currentFoodItem.unit)")
+                                .foregroundColor(.black)
+                                .font(.largeTitle)
+                                .rotationEffect(Angle(degrees: +10))
+                                .offset(x:25,y:-35)
+                            Text("\(currentFoodItem.price.formatted(.currency(code: "CAD")))\(currentFoodItem.unit)")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .rotationEffect(Angle(degrees: +10))
+                                .offset(x:25,y:-38)
                             Image("red-circle")
                                 .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            , alignment:.topTrailing)
+                                .scaledToFit()
+                                .frame(width:200)
+                                .offset(x:25, y:-35)
+                                
+                        }
 
                 }
             }
