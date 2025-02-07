@@ -14,11 +14,16 @@ struct DepartmentDetailView: View {
     
     var body: some View {
         VStack{
+
             List(depertmentToShow.items) { currentFoodItem in
-                
                 VStack {
                     Text("\(currentFoodItem.name)")
+                        .foregroundColor(.red)
                         .font(.title)
+                    Text("\(currentFoodItem.name)")
+                        .foregroundColor(.black)
+                        .font(.title)
+                        .offset(x:0, y:-32)
                     Image(currentFoodItem.image)
                         .resizable()
                         .scaledToFit()
@@ -39,11 +44,10 @@ struct DepartmentDetailView: View {
                                 .frame(width:200)
                                 .offset(x:25, y:-35)
                                 
-                        }
-
+                    }
                 }
             }
-            .listStyle(.insetGrouped)
+            .listStyle(.plain)
         }
      
         .navigationTitle(depertmentToShow.name)
